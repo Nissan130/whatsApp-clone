@@ -6,13 +6,13 @@ import * as SplashScreen from 'expo-splash-screen'
 SplashScreen.preventAutoHideAsync();
 
 const RootNavigation = () => {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
 
   useEffect(()=>{
     setTimeout(()=>{
       SplashScreen.hideAsync();
     },2000)
-  },[]);
+  },[isLogin]);
 
   return (
    <>

@@ -6,10 +6,12 @@ import ButtonComponent from '@/src/components/atoms/ButtonComponent';
 import OTPInput from "@codsod/react-native-otp-input";
 
 
+
 const VerifyOPT = () => {
   const [otp, setOTP] = useState("");
   const otp_verify = ()=> {
     console.log(otp)
+   
   }
   return (
     <SafeAreaView style={styles.container}>
